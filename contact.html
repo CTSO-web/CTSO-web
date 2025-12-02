@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CTSO Security</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔒</text></svg>">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-shield">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-main">CTSO</span>
+                        <span class="logo-tagline">Comprehensive Security</span>
+                    </div>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item"><a href="services.html">Services</a></li>
+                    <li class="nav-item"><a href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                
+                <div class="nav-cta">
+                    <a href="contact.html" class="btn btn-secondary">Get Security Audit</a>
+                </div>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 class="page-title">Contact CTSO Security</h1>
+                <p class="page-subtitle">Get in touch with our security experts</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / <span>Contact</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p class="contact-description">Have questions about our security services? Ready to schedule a security audit? Contact us using the information below or fill out the form and we'll respond within 24 hours.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Emergency Hotline</h4>
+                                <p>1-800-CTSO-SECURE</p>
+                                <p class="contact-note">24/7 emergency response line</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email Address</h4>
+                                <p>security@ctso.com</p>
+                                <p class="contact-note">General inquiries</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Headquarters</h4>
+                                <p>123 Security Avenue</p>
+                                <p>Protect City, PC 10001</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                                <p>Saturday: 9:00 AM - 2:00 PM</p>
+                                <p class="contact-note">24/7 Monitoring & Support Available</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="emergency-notice">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <div>
+                            <h4>Emergency Response</h4>
+                            <p>For immediate security threats or emergencies, call our 24/7 emergency line. Our response team is always ready.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h3>Request Security Audit</h3>
+                        <p>Fill out the form below and our security experts will contact you to schedule a free security audit.</p>
+                    </div>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                                <i class="fas fa-user"></i>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Service Interested In</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a Service</option>
+                                    <option value="cctv">CCTV Surveillance</option>
+                                    <option value="access">Access Control</option>
+                                    <option value="home">Home Security</option>
+                                    <option value="commercial">Commercial Security</option>
+                                    <option value="cyber">Cybersecurity</option>
+                                    <option value="fire">Fire Safety</option>
+                                    <option value="consultation">Security Consultation</option>
+                                </select>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="propertyType">Property Type</label>
+                            <select id="propertyType" name="propertyType">
+                                <option value="">Select Property Type</option>
+                                <option value="residential">Residential Home</option>
+                                <option value="apartment">Apartment/Condo</option>
+                                <option value="small-business">Small Business</option>
+                                <option value="corporate">Corporate Office</option>
+                                <option value="retail">Retail Store</option>
+                                <option value="warehouse">Warehouse/Industrial</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your security needs..." required></textarea>
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to our security newsletter for tips and updates</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Send Request
+                        </button>
+                    </form>
+                    
+                    <div class="form-notice">
+                        <i class="fas fa-info-circle"></i>
+                        <p>We respond to all inquiries within 24 hours. For urgent matters, please call our emergency hotline.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Service Areas</h2>
+                <p class="section-subtitle">We provide security solutions across multiple regions</p>
+            </div>
+            
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Nationwide Coverage</h3>
+                        <p>CTSO Security provides services across the entire country with regional offices in major cities.</p>
+                    </div>
+                </div>
+                
+                <div class="service-areas">
+                    <h3>Regional Offices</h3>
+                    <div class="areas-list">
+                        <div class="area">
+                            <h4>Headquarters</h4>
+                            <p>Protect City</p>
+                            <p>123 Security Avenue</p>
+                        </div>
+                        <div class="area">
+                            <h4>Eastern Region</h4>
+                            <p>Secureville</p>
+                            <p>456 Guardian Blvd</p>
+                        </div>
+                        <div class="area">
+                            <h4>Western Region</h4>
+                            <p>Safety City</p>
+                            <p>789 Patrol Street</p>
+                        </div>
+                        <div class="area">
+                            <h4>Southern Region</h4>
+                            <p>Defendertown</p>
+                            <p>101 Watchtower Road</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common questions about our security services</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How quickly can you install a security system?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For standard residential systems, we can typically schedule installation within 3-5 business days. Emergency installations are available within 24 hours for urgent situations. Commercial installations may take longer depending on the scope and complexity of the project.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Do you offer monitoring services?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer 24/7 professional monitoring services through our UL-listed monitoring centers. Our monitoring plans start at $29.99/month and include immediate response to alarms, fire alerts, and emergency situations.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Are your systems compatible with smart home devices?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most of our security systems integrate with popular smart home platforms like Google Home, Amazon Alexa, and Apple HomeKit. During your consultation, we'll discuss your specific smart home needs and recommend compatible solutions.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What warranties do you offer?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All our equipment comes with a 3-year manufacturer's warranty. Our installation work is guaranteed for 1 year, and we offer various extended warranty options for continued peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Secure Your Property?</h2>
+                <p>Don't wait for a security incident to happen. Contact us today for a free, no-obligation security assessment.</p>
+                <div class="cta-buttons">
+                    <a href="tel:1-800-CTSO-SECURE" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i> Call Now: 1-800-CTSO-SECURE
+                    </a>
+                    <a href="#contactForm" class="btn btn-outline">Send Message</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <div class="logo-shield">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">CTSO</span>
+                            <span class="logo-tagline">Comprehensive Security</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">Protecting families and businesses for over 26 years with the highest level security solutions.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services.html#cctv">CCTV Systems</a></li>
+                            <li><a href="services.html#access">Access Control</a></li>
+                            <li><a href="services.html#home">Home Security</a></li>
+                            <li><a href="services.html#commercial">Commercial Security</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-phone"></i> 1-800-CTSO-SECURE</li>
+                            <li><i class="fas fa-envelope"></i> security@ctso.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Security Ave, Protect City</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> CTSO Security. All Rights Reserved. | Kingred Certified Senior Security Experts</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/ctso-scripts.js"></script>
+    <script src="js/contact-script.js"></script>
+</body>
+</html>
