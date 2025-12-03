@@ -1,0 +1,288 @@
+/* services.css - Services Page Styles for CTSO Security */
+
+/* Services Detail */
+.services-detail {
+    background-color: var(--dark-gray);
+}
+
+.services-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.service-nav-link {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 30px;
+    text-decoration: none;
+    color: #b0b0b0;
+    font-weight: 500;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+}
+
+.service-nav-link:hover,
+.service-nav-link.active {
+    background-color: var(--primary-red);
+    color: var(--white);
+}
+
+.service-detail {
+    display: none;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.service-detail.active {
+    display: grid;
+}
+
+.service-detail h2 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.service-detail h2 i {
+    color: var(--primary-red);
+    font-size: 2rem;
+}
+
+.service-detail p {
+    color: #b0b0b0;
+    margin-bottom: 20px;
+}
+
+.service-features {
+    margin: 30px 0;
+}
+
+.service-features h3 {
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.feature {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.feature i {
+    font-size: 1.8rem;
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+}
+
+.feature h4 {
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #b0b0b0;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.service-benefits {
+    margin: 30px 0;
+}
+
+.service-benefits h3 {
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+
+.service-benefits ul {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.service-benefits li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+    color: #b0b0b0;
+}
+
+.service-benefits li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-blue);
+    font-weight: bold;
+}
+
+.image-placeholder {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #b0b0b0;
+}
+
+.image-placeholder i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: var(--primary-blue);
+}
+
+.image-placeholder p {
+    margin: 0;
+}
+
+/* All Services */
+.all-services {
+    margin-top: 80px;
+}
+
+.services-grid.detailed {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+}
+
+.service-card.detailed {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.service-price {
+    margin-top: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service-price span {
+    display: block;
+    font-size: 0.9rem;
+    color: #888888;
+    margin-bottom: 5px;
+}
+
+.service-price .price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Process Section */
+.process-section {
+    background-color: var(--primary-black);
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.process-step {
+    text-align: center;
+    position: relative;
+}
+
+.process-step:not(:last-child):after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    right: -15px;
+    width: 30px;
+    height: 2px;
+    background-color: var(--primary-blue);
+}
+
+.step-number {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-red), var(--primary-blue));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+    margin: 0 auto 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.process-step h3 {
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.process-step p {
+    color: #b0b0b0;
+    font-size: 0.9rem;
+}
+
+/* Services Page Responsive */
+@media (max-width: 1024px) {
+    .service-detail {
+        grid-template-columns: 1fr;
+    }
+    
+    .services-grid.detailed {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .process-steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    
+    .process-step:not(:last-child):after {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-nav {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 15px;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-nav-link {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .services-grid.detailed {
+        grid-template-columns: 1fr;
+    }
+}
